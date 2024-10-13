@@ -1,0 +1,121 @@
+/* Basic styling */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 18px;
+    color: #2D3748;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Full width for header */
+header {
+    width: 100%; /* Full width */
+    background-color: #63B3ED; /* Blue color */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .content {
+    max-width: 1200px; /* Limit the width of the content */
+    margin: 0 auto; /* Center the content */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header img.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header p {
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+/* Container for main content */
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main {
+    grid-column: 1 / 2;
+}
+
+article {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+article h2 {
+    font-size: 32px;
+    color: #48BB78;
+}
+
+article p {
+    color: #718096;
+}
+
+.post-image {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+/* Sidebar styling */
+aside {
+    grid-column: 2 / 3;
+}
+
+aside h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+aside .about {
+    background-color: #E2E8F0;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+aside .social-media h3, .archives h3 {
+    color: #48BB78;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul li a {
+    color: #4299E1;
+    text-decoration: none;
+}
+
+footer {
+    grid-column: 1 / -1;
+    background-color: #2C5282;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
